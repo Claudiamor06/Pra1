@@ -3,8 +3,8 @@
 
 #include <stdexcept>
 #include <ostream>
-#include "list/List.h"
-#include "list/Node.h"
+#include "List.h"
+#include "Node.h"
 
 template <typename T>
 class ListLinked : public List<T> {
