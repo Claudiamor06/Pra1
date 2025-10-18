@@ -7,4 +7,9 @@ clean:
 
 bin/testNode: testNode.cpp list/Node.h
 	mkdir -p bin
-	g++ -o bin/testNode testNode.cpp 
+	g++ -o bin/testNode testNode.cpp
+
+bin/testListLinked: testListLinked.cpp list/ListLinked.h list/Node.h list/List.h
+	mkdir -p bin
+	g++ -Ilist -o bin/testListLinked testListLinked.cpp
+
