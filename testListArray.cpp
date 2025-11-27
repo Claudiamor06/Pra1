@@ -84,4 +84,18 @@ int main(){
         std::cout << "l.remove(3) => std::out_of_range: " << e.what() << std::endl; 
     }
 
+//para que vaya la funcion suma
+
+std::cout << "Suma:\n";
+list.suma(10);
+std::cout << list << "\n";
+
+//para que vaya la funcion duplicar
+
+std::cout << "Antes:\n" << list << "\n";
+list.duplicar();
+std::cout << "Después de duplicar:\n" << list << "\n";
+
+
+
 }
