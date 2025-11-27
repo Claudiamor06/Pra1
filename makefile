@@ -1,15 +1,10 @@
-bin/testListArray: testListArray.cpp list/ListArray.h list/List.h
-	mkdir -p bin
-	g++ -o bin/testListArray testListArray.cpp list/ListArray.h
+
+testListArray: praF_Array.cpp ListArray.h List.h
+	g++ -o testListArray praF_Array.cpp
+
+testListLinked: praF_Linked.cpp ListLinked.h Node.h List.h
+	g++ -o testListLinked praF_Linked.cpp
 
 clean:
-	rm -r *.o *.gch bin
-
-bin/testNode: testNode.cpp list/Node.h
-	mkdir -p bin
-	g++ -o bin/testNode testNode.cpp
-
-bin/testListLinked: testListLinked.cpp list/ListLinked.h list/Node.h list/List.h
-	mkdir -p bin
-	g++ -Ilist -o bin/testListLinked testListLinked.cpp
+	rm -f testListArray testListLinked *.o *.gch
 
